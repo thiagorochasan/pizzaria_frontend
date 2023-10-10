@@ -107,7 +107,7 @@ async function handleRegister(event: FormEvent){
                     <form className={styles.form} onSubmit={handleRegister}>
 
 
-                        <label className={styles.labelAvatar}>
+                        {/* <label className={styles.labelAvatar}>
                             <span>
                                 <FiUpload size={25} color="#FFF" />
                             </span>
@@ -123,7 +123,7 @@ async function handleRegister(event: FormEvent){
                                     height={250}
                                 />
                             )}
-                        </label>
+                        </label> */}
 
                         <select value={categorySelected} onChange={handleChangeCategory}>
                             {categories.map( (item, index) => {

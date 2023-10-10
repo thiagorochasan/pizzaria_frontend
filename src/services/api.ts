@@ -8,8 +8,9 @@ export function setupAPIClient(ctx = undefined){
     let cookies = parseCookies(ctx);
 
     const api = axios.create({
-        // baseURL: 'http://localhost:3333',
-        baseURL: 'https://pizzaria-backend-iedcqp9vi-thiagorochasan-gmailcom.vercel.app',
+        //baseURL: 'http://localhost:3333',
+        //baseURL: 'https://pizzaria-backend-iedcqp9vi-thiagorochasan-gmailcom.vercel.app',
+        baseURL: 'https://pizzaria-backend-gnkxc8mv9-thiagorochasan-gmailcom.vercel.app',
         headers :{
             Authorization: `Bearer ${cookies['@nextauth.token']}`
         }
